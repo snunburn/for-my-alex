@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+    <head>
+
+    <title>may god have mercy on you</title>
+
+    <style>
+        img{
+            width: 100%;
+            margin-top: 20px;
+        }
+       
+        h1{ 
+          color: lightpink;
+          text-shadow: 5px 5px palevioletred;
+        }
+        .header {
+          background-color: #ffffff;
+          padding: 5px;
+          text-align: center;
+          font-size: 30px;
+          font-family: monospace ;
+          height: 150px;
+          border-bottom: solid 10px rgb(214, 214, 214);
+        }
+        
+        .topnav {
+        overflow: hidden;
+        background-color: rgb(231, 152, 164);
+        }
+        
+        .topnav a {
+        float: left;
+        width: 48.26%;
+        display: block;
+        color: #fcfcfc;
+        text-align: center;
+        font-size: 20px;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        .topnav a:hover {
+        background-color: #dbd1d6;
+        color: rgb(153, 153, 153);
+        }
+
+        .button{
+        color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 255, 255);
+        height: 40px;
+        width: 280px;
+        text-align: center;
+        font-size: 30px;
+        font-family: monospace;
+        position:absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+         margin: auto;
+        
+        
+        
+       }
+       button:hover {background-color: #dddddd; opacity: 90%;}
+
+       .plate {
+    
+	
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin-top: 300px;
+	left: 50%;
+	top: 50%;
+	width: 100vw;
+	height: 0;
+	padding-bottom: 100%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%) rotate(0) scale(2);
+	z-index: -1;
+	background-image: repeating-conic-gradient(
+		from 45deg at 50% 50%,
+		rgb(65, 13, 13) 0deg 10deg,
+		rgb(65, 13, 13) 10deg 20deg,
+		rgb(65, 13, 13) 20deg 30deg
+	);
+	visibility: hidden;
+	opacity: 0;
+}
+
+@keyframes rot {
+	to {
+		transform: translate(-50%, -50%) rotate(360deg) scale(2);
+	}
+}
+
+input[type="checkbox"] {
+	display: none;
+
+  /* toggle in the OFF state */
+	~ label {
+        margin-top: 300px;
+		position: fixed;
+		display: block;
+		width: 140px;
+		height: 72px;
+		border-radius: 40px;
+		border: 4px solid #999;
+		transition: transform 200ms cubic-bezier(0.41, -0.01, 0.63, 1.09);
+		cursor: pointer;
+		background: rgba(black, 0.3);
+
+		&::before,
+		&::after {
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			width: 68px;
+			height: 68px;
+			border-radius: 36px;
+			content: "";
+			transition: all 220ms cubic-bezier(0.76, 0.01, 0.15, 0.97);
+		}
+
+		&::before {
+			background-image: linear-gradient(45deg, rgb(71, 17, 17) 10%, rgb(0, 0, 0) 90%);
+		}
+
+		&::after {
+			background-color: #999;
+		}
+	}
+
+	
+	&:checked ~ label {
+		border: 4px solid #ffffff;
+		transform: scale(1.01);
+		box-shadow: 0 0 120px 10px rgb(58, 7, 7);
+		border-color: rgb(255, 255, 255);
+		background: rgba(rgb(255, 255, 255), 0.6);
+
+		&::before {
+			width: 136px;
+		}
+
+		&::after {
+			transform: translateX(68px);
+			background-color: rgb(255, 255, 255);
+			box-shadow: -4px 0 4px rgba(rgb(255, 255, 255), 0.1);
+		}
+	}
+
+  /* This is the part that activates the background when the checkbox is checked */
+	&:checked ~ div {
+		// background: yellow;
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 240ms, visibility 0s;
+		animation: rot 10s linear infinite;
+	}
+}
+    body {
+	height: 100vh;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	
+    overflow: hidden;
+    }
+
+    </style>
+
+    </head>
+    <body>
+
+        <script>
+            function play(){
+                var audio = document. getElementById("audio")
+                audio.play();
+            }
+    
+            function stop() {
+            audio.pause();
+            }
+    
+          </script>
+            
+    <a href="content.html" class="button">GET ME OUT!!!</a>
+
+    <input id="btn" type="checkbox" value="PLAY" onclick="play()">
+    <audio id="audio" src="lovely.mp3"></audio>
+    <label for="btn"></label>
+    <div class="plate"></div>
+
+          
+    </body>
+</html>

@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+    <head>
+
+    <title>HAPPY B-DAY!!!</title>
+
+    <style>
+       
+        h3{
+          font-size: 30px;
+          color: #fcfcfc;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{ 
+          color: lightpink;
+          text-shadow: 5px 5px palevioletred;
+        }
+        .header {
+          background-color: #ffffff;
+          padding: 5px;
+          text-align: center;
+          font-size: 30px;
+          font-family: monospace ;
+          height: 150px;
+          border-bottom: solid 10px rgb(214, 214, 214);
+        }
+        
+        .topnav {
+        overflow: hidden;
+        background-color: rgb(231, 152, 164);
+        }
+        
+        .topnav a {
+        float: left;
+        width: 31.588%;
+        display: block;
+        color: #fcfcfc;
+        text-align: center;
+        font-size: 20px;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        .topnav a:hover {
+        background-color: #dbd1d6;
+        color: rgb(153, 153, 153);
+        }
+
+        .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 33.5px;
+        float: left;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      h2{
+        color: white;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p{
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .footer {
+       background-color: #4e4343;
+       padding: 10px;
+       text-align: center;
+       }
+              
+    </style>
+
+    </head>
+    <body style="background-color:lightpink;">
+
+      <script>
+
+      var alarm1 = new Audio('orange hues.mp3');
+      var alarm2 = new Audio('dont bring.mp3');
+      var alarm3 = new Audio('apoca.mp3');
+      var alarm4 = new Audio('biplan.mp3');
+      var alarm5 = new Audio('de.mp3');
+      var alarm6 = new Audio('com.mp3');
+      var alarm7 = new Audio('snap.mp3');
+      var alarm8 = new Audio('light shower.mp3');
+      var alarm9 = new Audio('stop.mp3');
+      var alarm10 = new Audio('yes.mp3');
+
+      
+        function play(){
+            //var audio = document. getElementById("audio")
+            audio.play();
+        }
+
+        function stop() {
+            audio.pause();
+        }
+
+        function clearCoor() {
+        document.getElementById("demo").innerHTML = "";
+        }
+
+
+      </script>
+
+        <div class="header">
+            <h1>FOR MY LOVE</h1>
+          </div>
+          
+          <div class="topnav">
+            <a href="content.html">back</a>
+            <a href="whyiloveyou.html">letter</a>
+            <a href="mood.html">???</a>
+          </div>
+
+          <h3>songs that remind me of you</h3>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="old.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(139, 139, 139);"  value="PLAY" onmouseenter="alarm2.play()" onmouseleave="alarm2.pause()">
+                <h2>Dont Bring Me Down</h2> 
+                <p>Two Feet</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="cig.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(29, 29, 29);"  value="PLAY" onmouseenter="alarm3.play()" onmouseleave="alarm3.pause()">
+                <h2>Apocalypse</h2> 
+                <p>Cigarettes After Sex</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="labas.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(103, 141, 88);"  value="PLAY" onmouseenter="alarm4.play()" onmouseleave="alarm4.pause()">
+                
+                <h2>Labas rytas</h2> 
+                <p>Biplan</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="heos.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(142, 146, 140);"  value="PLAY" onmouseenter="alarm5.play()" onmouseleave="alarm5.pause()">
+                
+                <h2>De Selby</h2> 
+                <p>Hozier</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="ep.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(50, 100, 207);"  value="PLAY" onmouseenter="alarm6.play()" onmouseleave="alarm6.pause()">
+                
+                <h2>Compass</h2> 
+                <p>The Neighbourhood</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="Arctic-Monkeys-AM.webp" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(0, 0, 0);"  value="PLAY" onmouseenter="alarm7.play()" onmouseleave="alarm7.pause()">
+                
+                <h2>Snap Out Of It</h2> 
+                <p>Arctic Monkeys</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="mel.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(255, 152, 152);"  value="PLAY" onmouseenter="alarm8.play()" onmouseleave="alarm8.pause()">
+                
+                <h2>LIGHT SHOWER</h2> 
+                <p>Melanie Martinez</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="orange.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(212, 138, 41);"  value="PLAY" onmouseenter="alarm1.play()" onmouseleave="alarm1.pause()">
+                
+                <h2>orange hues</h2> 
+                <p>aqualina</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="button.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(110, 110, 110);"  value="PLAY" onmouseenter="alarm9.play()" onmouseleave="alarm9.pause()">
+                
+                <h2>Stop The World I Wanna Get Off With You</h2> 
+                <p>Arctic Monkeys</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="lana.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back" style = "background-color: rgb(255, 179, 159);"  value="PLAY" onmouseenter="alarm10.play()" onmouseleave="alarm10.pause()">
+                
+                <h2>Say Yes To Hevan</h2> 
+                <p>Lana Del Ray</p> 
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+          
+
+        
+    </body>
+  </html>

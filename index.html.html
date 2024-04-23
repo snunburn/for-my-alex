@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+
+    <title>HAPPY B-DAY!!!</title>
+<meta name="google-site-verification" content="wk1if-E9BHBEst-5tYjmtTm9DnsRqbMWcUlf3TDGA5k" />
+
+    <style>
+
+        div {
+          border: 5px solid rgb(216, 216, 216);
+          width: 500px;
+          height: 60px;
+          text-align: center;
+          font-size:  30px;
+          background-color: rgb(255, 255, 255);
+          margin-left: 650px;
+          padding-top: 10px;
+          border-radius: 10px;
+          box-shadow: 5px 5px palevioletred;
+        }
+        img {
+         width:200px;
+         height:100px;
+         margin-left: 800px;
+        }
+    </style>
+
+    </head>
+    <body style="background-color:lightpink;">
+
+        <P style="color:rgb(255, 255, 255);
+         font-size:100px;
+         text-align: center;
+         font-family: monospace ;
+          margin-top: 200px;
+          margin-bottom: 20px;
+          text-shadow: 5px 5px palevioletred;">Enter the password</P>
+          <img src="heart.gif">
+        <div>
+            <form>
+                <input type="password" id="pswd">
+                <input type="button" value="Submit" onclick="checkPswd();" />
+            </form>
+            <!--Function to check password the already set password is admin-->
+            <script type="text/javascript">
+                function checkPswd() {
+                    var confirmPassword = "100504";
+                    var password = document.getElementById("pswd").value;
+                    if (password == confirmPassword) {
+                         window.location="content.html";
+                    }
+                    else{
+                        alert("Passwords do not match.");
+                    }
+                }
+            </script>
+        </div>
+
+    </body>
+</html>
